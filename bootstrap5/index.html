@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!--required meta tags-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="可愛い猫の写真集">
+   
+  <!--bootstrap css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>猫のフォトギャラリー</title>
+
+  <!--bootstrap icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <main>
+    <!--sticky-top headerを固定-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"> 
+      <div class="container-fluid">
+        <!--iタグはicon me-1でmaginを設定する-->
+        <a class="navbar-brand" href="index.html"><i class="bi bi-images me-1"></i>cats</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">New</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      
+        <div class="cover">
+          <h1><i class="bi bi-camera" me-1></i>猫ギャラリー</h1>
+          <p>可愛い猫たちの写真をご覧ください</p>
+        </div>
+ 
+  
+  <!--mt-4でheaderとmaincontainerのmarginを設定する-->     
+  <div class="container mt-4">
+    <!--gy-3で上下のpaddingを設定する-->
+    <div class="row gy-3">
+    <!--col-sm-6 ３列の物を一旦２列、最後に１列-->
+      <div class="col-lg-4 col-sm-6"><img src="imgs/bg.jpg" alt="cat" class="img-thumbnail"></div>
+      <div class="col-lg-4 col-sm-6"><img src="imgs/img01.jpg" alt="cat" class="img-thumbnail"></div>
+      <div class="col-lg-4 col-sm-6"><img src="imgs/img02.jpg" alt="cat" class="img-thumbnail"></div>
+      <div class="col-lg-4 col-sm-6"><img src="imgs/img03.jpg" alt="cat" class="img-thumbnail"></div>
+      <div class="col-lg-4 col-sm-6"><img src="imgs/img04.jpg" alt="cat" class="img-thumbnail"></div>
+      <div class="col-lg-4 col-sm-6"><img src="imgs/img05.jpg" alt="cat" class="img-thumbnail"></div>
+      <div class="col-lg-4 col-sm-6"><img src="imgs/img06.jpg" alt="cat" class="img-thumbnail"></div>
+      <div class="col-lg-4 col-sm-6"><img src="imgs/img07.jpg" alt="cat" class="img-thumbnail"></div>
+      <div class="col-lg-4 col-sm-6"><img src="imgs/img08.jpg" alt="cat" class="img-thumbnail"></div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="py-4 mt-5 bg-dark text-center">
+  <div>
+    <!--text-white 色を指定　50とは透明度-->
+    <p class="text-white-50 mt-3">&copy riken 2022</p>
+  </div>
+</footer>
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
